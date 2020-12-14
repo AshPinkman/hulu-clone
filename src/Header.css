@@ -48,8 +48,25 @@
   cursor: pointer;
   transition: transform 400ms ease-in;
   margin-right: 30px;
+  animation-name: moveInRight;
+  animation-duration: 5s;
 }
 
 .header > img:hover {
   transform: scale(1.4);
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-120px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0);
+  }
 }
